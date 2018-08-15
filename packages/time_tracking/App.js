@@ -20,23 +20,16 @@ export default class App extends React.Component {
         title: 'Mow the lawn',
         project: 'House Chores',
         id: uuidv4(),
-        elapsed: 5460494,
-        isRunning: false,
-      },
-      {
-        title: 'Clear paper jam',
-        project: 'Office Chores',
-        id: uuidv4(),
-        elapsed: 1277537,
-        isRunning: false,
-      },
-      {
-        title: 'Ponder origins of universe',
-        project: 'Life Chores',
-        id: uuidv4(),
-        elapsed: 120000,
+        elapsed: 5456099,
         isRunning: true,
       },
+      {
+        title: 'Bake squash',
+        project: 'Kitchen Chores',
+        id: uuidv4(),
+        elapsed: 1273998,
+        isRunning: false,
+      }
     ],
   };
 
