@@ -11,6 +11,7 @@ import colors from "../utils/colors";
 
 import ContactListItem from "../components/ContactListItem";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import { DrawerActions } from "react-navigation-drawer";
 
 import { fetchContacts } from "../utils/api";
 
@@ -23,14 +24,14 @@ export default class Contacts extends React.Component {
     error: false,
   };
 
-  static navigationOptions = ({ navigation: { navigate }}) => ({
+  static navigationOptions = ({ navigation }) => ({
     title: "Contacts",
     headerLeft: (
       <Icon
         name="menu"
         size={24}
         style={{ color: colors.black, marginLeft: 10 }}
-        onPress={() => navigate("DrawerToggle")}
+        onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
       />
     ),
   });

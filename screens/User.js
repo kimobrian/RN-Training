@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import { DrawerActions } from "react-navigation-drawer";
 
 import ContactThumbnail from "../components/ContactThumbnail";
 
@@ -8,20 +9,28 @@ import colors from "../utils/colors";
 import { fetchUserContact } from "../utils/api";
 
 export default class User extends React.Component {
-  static navigationOptions = ({ navigation: { navigate }}) => ({
+  static navigationOptions = ({ navigation }) => ({
     title: "Me",
     headerTintColor: "white",
     headerStyle: {
       backgroundColor: colors.blue,
     },
+    headerLeft: (
+      <Icon
+        name="menu"
+        size={24}
+        style={{ color: "white", marginLeft: 10 }}
+        onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
+      />
+    ),
     headerRight: (
       <Icon
         name="settings"
         size={24}
         style={{ color: "white", marginRight: 10 }}
-        onPress={() => navigate("Options")}
+        onPress={() => navigation.navigate("Options")}
       />
-    )
+    ),
   });
 
   state = {

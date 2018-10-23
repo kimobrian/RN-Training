@@ -8,15 +8,26 @@ import {
 } from "react-native";
 
 import { fetchContacts } from "../utils/api";
+import colors from "../utils/colors";
+import Icon from "react-native-vector-icons/MaterialIcons";
+import { DrawerActions } from "react-navigation-drawer";
 
 import ContactThumbnail from "../components/ContactThumbnail";
 
 const keyExtractor = ({ phone }) => phone;
 
 export default class Favorites extends React.Component {
-  static navigationOptions = {
+  static navigationOptions = ({ navigation })=> ({
     title: "Favorites",
-  };
+    headerLeft: (
+      <Icon
+        name="menu"
+        size={24}
+        style={{ color: colors.black, marginLeft: 10 }}
+        onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
+      />
+    )
+  });
 
   state = {
     contacts: [],
