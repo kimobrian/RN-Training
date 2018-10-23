@@ -1,21 +1,21 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View } from "react-native";
 
-import ContactThumbnail from '../components/ContactThumbnail';
-import DetailListItem from '../components/DetailListItem';
+import ContactThumbnail from "../components/ContactThumbnail";
+import DetailListItem from "../components/DetailListItem";
 
-import colors from '../utils/colors';
+import colors from "../utils/colors";
 
 export default class Profile extends React.Component {
   state = {
     contact: {},
   };
 
-  static navigationOptions = ({ navigation: { state: { params } } }) => {
-    const { contact: { name } } = params;
+  static navigationOptions = ({ navigation: { state: { params }}}) => {
+    const { contact: { name }} = params;
     return {
-      title: name.split(' ')[0],
-      headerTintColor: 'white',
+      title: name.split(" ")[0],
+      headerTintColor: "white",
       headerStyle: {
         backgroundColor: colors.blue,
       },
@@ -24,7 +24,7 @@ export default class Profile extends React.Component {
 
   render() {
 
-    const { navigation: { state: { params } } } = this.props;
+    const { navigation: { state: { params }}} = this.props;
     const { contact } = params;
     const {
       avatar, name, email, phone, cell,
@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
   },
   avatarSection: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor: colors.blue,
   },
   detailsSection: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: "white",
   },
 });

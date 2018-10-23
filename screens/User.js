@@ -1,16 +1,16 @@
-import React from 'react';
-import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import React from "react";
+import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
+import Icon from "react-native-vector-icons/MaterialIcons";
 
-import ContactThumbnail from '../components/ContactThumbnail';
+import ContactThumbnail from "../components/ContactThumbnail";
 
-import colors from '../utils/colors';
-import { fetchUserContact } from '../utils/api';
+import colors from "../utils/colors";
+import { fetchUserContact } from "../utils/api";
 
 export default class User extends React.Component {
-  static navigationOptions = ({ navigation: { navigate } }) => ({
-    title: 'Me',
-    headerTintColor: 'white',
+  static navigationOptions = ({ navigation: { navigate }}) => ({
+    title: "Me",
+    headerTintColor: "white",
     headerStyle: {
       backgroundColor: colors.blue,
     },
@@ -18,8 +18,8 @@ export default class User extends React.Component {
       <Icon
         name="settings"
         size={24}
-        style={{ color: 'white', marginRight: 10 }}
-        onPress={() => navigate('Options')}
+        style={{ color: "white", marginRight: 10 }}
+        onPress={() => navigate("Options")}
       />
     )
   });
@@ -67,8 +67,8 @@ export default class User extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor: colors.blue,
   },
 });

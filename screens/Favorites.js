@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react";
 import {
   StyleSheet,
   Text,
   View,
   FlatList,
   ActivityIndicator,
-} from 'react-native';
+} from "react-native";
 
-import { fetchContacts } from '../utils/api';
+import { fetchContacts } from "../utils/api";
 
-import ContactThumbnail from '../components/ContactThumbnail';
+import ContactThumbnail from "../components/ContactThumbnail";
 
 const keyExtractor = ({ phone }) => phone;
 
 export default class Favorites extends React.Component {
   static navigationOptions = {
-    title: 'Favorites',
+    title: "Favorites",
   };
 
   state = {
@@ -42,13 +42,13 @@ export default class Favorites extends React.Component {
   }
 
   renderFavoriteThumbnail = ({ item }) => {
-    const { navigation: { navigate } } = this.props;
+    const { navigation: { navigate }} = this.props;
     const { avatar } = item;
 
     return (
       <ContactThumbnail
         avatar={avatar}
-        onPress={() => navigate('Profile', { contact: item })}
+        onPress={() => navigate("Profile", { contact: item })}
       />
     );
   };
@@ -64,14 +64,14 @@ export default class Favorites extends React.Component {
 
         {!loading &&
           !error && (
-            <FlatList
-              data={favorites}
-              keyExtractor={keyExtractor}
-              numColumns={3}
-              contentContainerStyle={styles.list}
-              renderItem={this.renderFavoriteThumbnail}
-            />
-          )}
+          <FlatList
+            data={favorites}
+            keyExtractor={keyExtractor}
+            numColumns={3}
+            contentContainerStyle={styles.list}
+            renderItem={this.renderFavoriteThumbnail}
+          />
+        )}
       </View>
     );
   }
@@ -79,11 +79,11 @@ export default class Favorites extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
-    justifyContent: 'center',
+    backgroundColor: "white",
+    justifyContent: "center",
     flex: 1,
   },
   list: {
-    alignItems: 'center',
+    alignItems: "center",
   },
 });

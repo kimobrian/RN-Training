@@ -1,6 +1,6 @@
-import uuidv4 from 'uuid/v4';
+import uuidv4 from "uuid/v4";
 
-import capitalize from '../utils/capitalize';
+import capitalize from "../utils/capitalize";
 
 const mapContact = contact => {
   const {
@@ -19,21 +19,21 @@ const mapContact = contact => {
 };
 
 export const fetchContacts = async () => {
-  const response = await fetch('https://randomuser.me/api/?results=100&seed=fullstackio');
+  const response = await fetch("https://randomuser.me/api/?results=100&seed=fullstackio");
   const contactData = await response.json();
 
   return contactData.results.map(mapContact);
 };
 
 export const fetchUserContact = async () => {
-  const response = await fetch('https://randomuser.me/api/?seed=fullstackio');
+  const response = await fetch("https://randomuser.me/api/?seed=fullstackio");
   const userData = await response.json();
 
   return mapContact(userData.results[0]);
 };
 
 export const fetchRandomContact = async () => {
-  const response = await fetch('https://randomuser.me/api/');
+  const response = await fetch("https://randomuser.me/api/");
   const userData = await response.json();
 
   return mapContact(userData.results[0]);

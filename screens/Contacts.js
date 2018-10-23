@@ -1,15 +1,18 @@
-import React from 'react';
+import React from "react";
 import {
   StyleSheet,
   Text,
   View,
   FlatList,
   ActivityIndicator,
-} from 'react-native';
+} from "react-native";
 
-import ContactListItem from '../components/ContactListItem';
+import colors from "../utils/colors";
 
-import { fetchContacts } from '../utils/api';
+import ContactListItem from "../components/ContactListItem";
+import Icon from "react-native-vector-icons/MaterialIcons";
+
+import { fetchContacts } from "../utils/api";
 
 const keyExtractor = ({ phone }) => phone;
 
@@ -20,9 +23,17 @@ export default class Contacts extends React.Component {
     error: false,
   };
 
-  static navigationOptions = {
-    title: 'Contacts',
-  };
+  static navigationOptions = ({ navigation: { navigate }}) => ({
+    title: "Contacts",
+    headerLeft: (
+      <Icon
+        name="menu"
+        size={24}
+        style={{ color: colors.black, marginLeft: 10 }}
+        onPress={() => navigate("DrawerToggle")}
+      />
+    ),
+  });
 
   async componentDidMount() {
     try {
@@ -42,7 +53,7 @@ export default class Contacts extends React.Component {
   }
 
   renderContact = ({ item }) => {
-    const { navigation: { navigate } } = this.props;
+    const { navigation: { navigate }} = this.props;
     const { name, avatar, phone } = item;
 
     return (
@@ -50,7 +61,7 @@ export default class Contacts extends React.Component {
         name={name}
         avatar={avatar}
         phone={phone}
-        onPress={() => navigate('Profile', { contact: item })}
+        onPress={() => navigate("Profile", { contact: item })}
       />
     );
   };
@@ -66,12 +77,12 @@ export default class Contacts extends React.Component {
         {error && <Text>Error...</Text>}
         {!loading &&
           !error && (
-            <FlatList
-              data={contactsSorted}
-              keyExtractor={keyExtractor}
-              renderItem={this.renderContact}
-            />
-          )}
+          <FlatList
+            data={contactsSorted}
+            keyExtractor={keyExtractor}
+            renderItem={this.renderContact}
+          />
+        )}
       </View>
     );
   }
@@ -79,8 +90,8 @@ export default class Contacts extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
-    justifyContent: 'center',
+    backgroundColor: "white",
+    justifyContent: "center",
     flex: 1,
   },
 });

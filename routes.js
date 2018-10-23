@@ -1,19 +1,23 @@
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
-import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Platform } from 'react-native'
+import { createStackNavigator, createDrawerNavigator /*,createBottomTabNavigator*/ } from "react-navigation";
+import React from "react";
+import Icon from "react-native-vector-icons/MaterialIcons";
 
-import Contacts from './screens/Contacts';
-import Profile from './screens/Profile';
-import Favorites from './screens/Favorites';
-import User from './screens/User';
-import Options from './screens/Options';
+import Contacts from "./screens/Contacts";
+import Profile from "./screens/Profile";
+import Favorites from "./screens/Favorites";
+import User from "./screens/User";
+import Options from "./screens/Options";
 
-import colors from './utils/colors';
+import colors from "./utils/colors";
 
-const getTabBarIcon = icon => ({ tintColor }) => (
-  <Icon name={icon} size={26} style={{ color: tintColor }} />
+// const getTabBarIcon = icon => ({ tintColor }) => (
+//   <Icon name={icon} size={26} style={{ color: tintColor }} />
+// );
+
+const getDrawerItemIcon = icon => ({ tintColor }) => (
+  <Icon name={icon} size={22} style={{ color: tintColor }} />
 );
+ 
 
 const ContactsScreens = createStackNavigator(
   {
@@ -25,13 +29,14 @@ const ContactsScreens = createStackNavigator(
     },
   },
   {
-    initialRouteName: 'Contacts'
+    initialRouteName: "Contacts"
   },
 );
 
 ContactsScreens.navigationOptions = {
-  tabBarIcon: getTabBarIcon('list'),
-}
+  // tabBarIcon: getTabBarIcon('list'),
+  drawerIcon: getDrawerItemIcon("list"),
+};
 
 const FavoritesScreens = createStackNavigator(
   {
@@ -43,13 +48,14 @@ const FavoritesScreens = createStackNavigator(
     },
   },
   {
-    initialRouteName: 'Favorites'
+    initialRouteName: "Favorites"
   },
 );
 
 FavoritesScreens.navigationOptions = {
-  tabBarIcon: getTabBarIcon('star'),
-}
+  // tabBarIcon: getTabBarIcon('star'),
+  drawerIcon: getDrawerItemIcon("star"),
+};
 
 const UserScreens = createStackNavigator(
   {
@@ -61,16 +67,17 @@ const UserScreens = createStackNavigator(
     }
   },
   {
-    mode: 'modal',
-    initialRouteName: 'User'
+    mode: "modal",
+    initialRouteName: "User"
   },
 );
 
 UserScreens.navigationOptions = {
-  tabBarIcon: getTabBarIcon('person'),
-}
+  // tabBarIcon: getTabBarIcon('person'),
+  drawerIcon: getDrawerItemIcon("person"),
+};
 
-export default createBottomTabNavigator(
+export default createDrawerNavigator(
   {
     Contacts: {
       screen: ContactsScreens,
@@ -83,7 +90,7 @@ export default createBottomTabNavigator(
     },
   },
   {
-    initialRouteName: 'Contacts',
+    initialRouteName: "Contacts",
     tabBarOptions: {
       style: {
         backgroundColor: colors.greyLight,
