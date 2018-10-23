@@ -7,6 +7,7 @@ import Contacts from './screens/Contacts';
 import Profile from './screens/Profile';
 import Favorites from './screens/Favorites';
 import User from './screens/User';
+import Options from './screens/Options';
 
 import colors from './utils/colors';
 
@@ -55,8 +56,12 @@ const UserScreens = createStackNavigator(
     User: {
       screen: User,
     },
+    Options: {
+      screen: Options
+    }
   },
   {
+    mode: 'modal',
     initialRouteName: 'User'
   },
 );
@@ -83,8 +88,7 @@ export default createBottomTabNavigator(
       style: {
         backgroundColor: colors.greyLight,
       },
-      showLabel: true,
-      showIcon: true,
+      showLabel: false,
       activeTintColor: colors.blue,
       inactiveTintColor: colors.greyDark,
     },
