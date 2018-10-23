@@ -7,18 +7,14 @@ import DetailListItem from "../components/DetailListItem";
 import colors from "../utils/colors";
 
 export default class Profile extends React.Component {
-  state = {
-    contact: {},
-  };
+  state = { contact: {}};
 
   static navigationOptions = ({ navigation: { state: { params }}}) => {
     const { contact: { name }} = params;
     return {
       title: name.split(" ")[0],
       headerTintColor: "white",
-      headerStyle: {
-        backgroundColor: colors.blue,
-      },
+      headerStyle: { backgroundColor: colors.blue }
     };
   };
 
@@ -26,9 +22,7 @@ export default class Profile extends React.Component {
 
     const { navigation: { state: { params }}} = this.props;
     const { contact } = params;
-    const {
-      avatar, name, email, phone, cell,
-    } = contact;
+    const { avatar, name, email, phone, cell } = contact;
 
     return (
       <View style={styles.container}>
@@ -46,17 +40,15 @@ export default class Profile extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+  container: { flex: 1 },
   avatarSection: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: colors.blue,
+    backgroundColor: colors.blue
   },
   detailsSection: {
     flex: 1,
-    backgroundColor: "white",
-  },
+    backgroundColor: "white"
+  }
 });

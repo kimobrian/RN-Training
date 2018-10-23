@@ -3,9 +3,7 @@ import uuidv4 from "uuid/v4";
 import capitalize from "../utils/capitalize";
 
 const mapContact = contact => {
-  const {
-    name, picture, phone, cell, email,
-  } = contact;
+  const { name, picture, phone, cell, email } = contact;
 
   return {
     id: uuidv4(),
@@ -14,7 +12,7 @@ const mapContact = contact => {
     phone,
     cell,
     email,
-    favorite: Math.random() >= 0.5, // randomly generate favorite contacts
+    favorite: Math.random() >= 0.5 // randomly generate favorite contacts
   };
 };
 

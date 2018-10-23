@@ -4,7 +4,7 @@ import {
   Text,
   View,
   FlatList,
-  ActivityIndicator,
+  ActivityIndicator
 } from "react-native";
 
 import colors from "../utils/colors";
@@ -13,14 +13,21 @@ import ContactListItem from "../components/ContactListItem";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 import { fetchContacts } from "../utils/api";
+import store from "../store";
 
 const keyExtractor = ({ phone }) => phone;
 
 export default class Contacts extends React.Component {
+  // state = {
+  //   contacts: [],
+  //   loading: true,
+  //   error: false,
+  // };
+
   state = {
-    contacts: [],
-    loading: true,
-    error: false,
+    contacts: store.getState().contacts,
+    loading: store.getState().isFetchingContacts,
+    error: store.getState().error
   };
 
   static navigationOptions = ({ navigation: { toggleDrawer }}) => ({
@@ -32,24 +39,39 @@ export default class Contacts extends React.Component {
         style={{ color: colors.black, marginLeft: 10 }}
         onPress={() => toggleDrawer()}
       />
-    ),
+    )
   });
 
   async componentDidMount() {
-    try {
-      const contacts = await fetchContacts();
+    // try {
+    //   const contacts = await fetchContacts();
 
+    //   this.setState({
+    //     contacts,
+    //     loading: false,
+    //     error: false,
+    //   });
+    // } catch (e) {
+    //   this.setState({
+    //     loading: false,
+    //     error: true,
+    //   });
+    // }
+    this.unsubscribe = store.onChange(() =>
       this.setState({
-        contacts,
-        loading: false,
-        error: false,
-      });
-    } catch (e) {
-      this.setState({
-        loading: false,
-        error: true,
-      });
-    }
+        contacts: store.getState().contacts,
+        loading: store.getState().isFetchingContacts,
+        error: store.getState().error
+      }));
+
+    const contacts = await fetchContacts();
+
+    store.setState({ contacts, isFetchingContacts: false });
+  }
+
+
+  componentWillUnmount() {
+    this.unsubscribe();
   }
 
   renderContact = ({ item }) => {
@@ -92,6 +114,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
     justifyContent: "center",
-    flex: 1,
-  },
+    flex: 1
+  }
 });

@@ -4,7 +4,7 @@ import {
   Text,
   View,
   FlatList,
-  ActivityIndicator,
+  ActivityIndicator
 } from "react-native";
 
 import { fetchContacts } from "../utils/api";
@@ -14,6 +14,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import ContactThumbnail from "../components/ContactThumbnail";
 
 const keyExtractor = ({ phone }) => phone;
+import store from "../store";
 
 export default class Favorites extends React.Component {
   static navigationOptions = ({ navigation: { toggleDrawer }})=> ({
@@ -28,27 +29,51 @@ export default class Favorites extends React.Component {
     )
   });
 
+  // state = {
+  //   contacts: [],
+  //   loading: true,
+  //   error: false,
+  // };
+
   state = {
-    contacts: [],
-    loading: true,
-    error: false,
+    contacts: store.getState().contacts,
+    loading: store.getState().isFetchingContacts,
+    error: store.getState().error
   };
 
   async componentDidMount() {
-    try {
-      const contacts = await fetchContacts();
+    const { contacts } = this.state;
 
+    this.unsubscribe = store.onChange(() =>
       this.setState({
-        contacts,
-        loading: false,
-        error: false,
-      });
-    } catch (e) {
-      this.setState({
-        loading: false,
-        error: true,
-      });
+        contacts: store.getState().contacts,
+        loading: store.getState().isFetchingContacts,
+        error: store.getState().error
+      }));
+
+    if (contacts.length === 0) {
+      const fetchedContacts = await fetchContacts();
+      store.setState({ contacts: fetchedContacts, isFetchingContacts: false });
     }
+
+    // try {
+    //   const contacts = await fetchContacts();
+
+    //   this.setState({
+    //     contacts,
+    //     loading: false,
+    //     error: false,
+    //   });
+    // } catch (e) {
+    //   this.setState({
+    //     loading: false,
+    //     error: true,
+    //   });
+    // }
+  }
+
+  componentWillUnmount() {
+    this.unsubscribe();
   }
 
   renderFavoriteThumbnail = ({ item }) => {
@@ -91,9 +116,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
     justifyContent: "center",
-    flex: 1,
+    flex: 1
   },
-  list: {
-    alignItems: "center",
-  },
+  list: { alignItems: "center" }
 });

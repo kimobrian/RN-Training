@@ -15,7 +15,7 @@ export default class Options extends React.Component {
         style={{ color: colors.black, marginLeft: 10 }}
         onPress={() => goBack()}
       />
-    ),
+    )
   });
 
   render() {
@@ -32,6 +32,6 @@ export default class Options extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
-  },
+    backgroundColor: "white"
+  }
 });

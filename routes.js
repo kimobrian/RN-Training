@@ -15,50 +15,34 @@ const getDrawerItemIcon = icon => ({ tintColor }) => (
 
 const ContactsScreens = createStackNavigator(
   {
-    Contacts: {
-      screen: Contacts,
-    },
-    Profile: {
-      screen: Profile,
-    },
+    Contacts: { screen: Contacts },
+    Profile: { screen: Profile }
   },
-  {
-    initialRouteName: "Contacts"
-  },
+  { initialRouteName: "Contacts" },
 );
 
 ContactsScreens.navigationOptions = {
   drawerLabel: "Contacts",
-  drawerIcon: getDrawerItemIcon("list"),
+  drawerIcon: getDrawerItemIcon("list")
 };
 
 const FavoritesScreens = createStackNavigator(
   {
-    Favorites: {
-      screen: Favorites,
-    },
-    Profile: {
-      screen: Profile,
-    },
+    Favorites: { screen: Favorites },
+    Profile: { screen: Profile }
   },
-  {
-    initialRouteName: "Favorites"
-  },
+  { initialRouteName: "Favorites" },
 );
 
 FavoritesScreens.navigationOptions = {
   drawerLabel: "Favorites",
-  drawerIcon: getDrawerItemIcon("star"),
+  drawerIcon: getDrawerItemIcon("star")
 };
 
 const UserScreens = createStackNavigator(
   {
-    User: {
-      screen: User,
-    },
-    Options: {
-      screen: Options
-    }
+    User: { screen: User },
+    Options: { screen: Options }
   },
   {
     mode: "modal",
@@ -68,20 +52,14 @@ const UserScreens = createStackNavigator(
 
 UserScreens.navigationOptions = {
   drawerLabel: "Users",
-  drawerIcon: getDrawerItemIcon("person"),
+  drawerIcon: getDrawerItemIcon("person")
 };
 
 export default createDrawerNavigator(
   {
-    Contacts: {
-      screen: ContactsScreens,
-    },
-    Favorites: {
-      screen: FavoritesScreens,
-    },
-    User: {
-      screen: UserScreens,
-    },
+    Contacts: { screen: ContactsScreens },
+    Favorites: { screen: FavoritesScreens },
+    User: { screen: UserScreens }
   },
   // {
   //   initialRouteName: "Contacts",

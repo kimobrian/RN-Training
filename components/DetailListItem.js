@@ -16,7 +16,7 @@ export default function DetailListItem({ icon, title, subtitle }) {
               size={24}
               style={{
                 color: colors.black,
-                marginRight: 20,
+                marginRight: 20
               }}
             />
           )}
@@ -34,43 +34,41 @@ export default function DetailListItem({ icon, title, subtitle }) {
 DetailListItem.propTypes = {
   icon: PropTypes.string,
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string,
+  subtitle: PropTypes.string
 };
 
 DetailListItem.defaultProps = {
   icon: null,
-  subtitle: null,
+  subtitle: null
 };
 
 const styles = StyleSheet.create({
-  borderContainer: {
-    paddingLeft: 24,
-  },
+  borderContainer: { paddingLeft: 24 },
   wrapper: {
     flexDirection: "row",
     paddingTop: 16,
     paddingBottom: 16,
     paddingRight: 24,
     borderBottomColor: colors.grey,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth
   },
   container: {
     flex: 1,
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "center"
   },
   contentContainer: {
     justifyContent: "center",
-    flex: 1,
+    flex: 1
   },
   title: {
     color: colors.black,
     fontWeight: "bold",
-    fontSize: 16,
+    fontSize: 16
   },
   subtitle: {
     color: colors.blue,
     fontSize: 15,
-    marginTop: 4,
-  },
+    marginTop: 4
+  }
 });

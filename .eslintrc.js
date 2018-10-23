@@ -38,7 +38,9 @@ module.exports = {
             "arraysInObjects": false, 
             "objectsInObjects": false, 
             "arraysInObjects": false 
-        }]
+        }],
+        "object-curly-newline": ["error", { "multiline": true }],
+        "comma-dangle": ["error", "never"]
     },
     "settings": {
         "react": {
