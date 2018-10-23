@@ -8,12 +8,20 @@ import colors from "../utils/colors";
 import { fetchUserContact } from "../utils/api";
 
 export default class User extends React.Component {
-  static navigationOptions = ({ navigation: { navigate }}) => ({
+  static navigationOptions = ({ navigation: { toggleDrawer, navigate }}) => ({
     title: "Me",
     headerTintColor: "white",
     headerStyle: {
       backgroundColor: colors.blue,
     },
+    headerLeft: (
+      <Icon
+        name="menu"
+        size={24}
+        style={{ color: "white", marginLeft: 10 }}
+        onPress={() => toggleDrawer()}
+      />
+    ),
     headerRight: (
       <Icon
         name="settings"
@@ -21,7 +29,7 @@ export default class User extends React.Component {
         style={{ color: "white", marginRight: 10 }}
         onPress={() => navigate("Options")}
       />
-    )
+    ),
   });
 
   state = {

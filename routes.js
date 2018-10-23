@@ -8,12 +8,6 @@ import Favorites from "./screens/Favorites";
 import User from "./screens/User";
 import Options from "./screens/Options";
 
-import colors from "./utils/colors";
-
-// const getTabBarIcon = icon => ({ tintColor }) => (
-//   <Icon name={icon} size={26} style={{ color: tintColor }} />
-// );
-
 const getDrawerItemIcon = icon => ({ tintColor }) => (
   <Icon name={icon} size={22} style={{ color: tintColor }} />
 );
@@ -34,7 +28,7 @@ const ContactsScreens = createStackNavigator(
 );
 
 ContactsScreens.navigationOptions = {
-  // tabBarIcon: getTabBarIcon('list'),
+  drawerLabel: "Contacts",
   drawerIcon: getDrawerItemIcon("list"),
 };
 
@@ -53,7 +47,7 @@ const FavoritesScreens = createStackNavigator(
 );
 
 FavoritesScreens.navigationOptions = {
-  // tabBarIcon: getTabBarIcon('star'),
+  drawerLabel: "Favorites",
   drawerIcon: getDrawerItemIcon("star"),
 };
 
@@ -73,7 +67,7 @@ const UserScreens = createStackNavigator(
 );
 
 UserScreens.navigationOptions = {
-  // tabBarIcon: getTabBarIcon('person'),
+  drawerLabel: "Users",
   drawerIcon: getDrawerItemIcon("person"),
 };
 
@@ -89,15 +83,15 @@ export default createDrawerNavigator(
       screen: UserScreens,
     },
   },
-  {
-    initialRouteName: "Contacts",
-    tabBarOptions: {
-      style: {
-        backgroundColor: colors.greyLight,
-      },
-      showLabel: false,
-      activeTintColor: colors.blue,
-      inactiveTintColor: colors.greyDark,
-    },
-  },
+  // {
+  //   initialRouteName: "Contacts",
+  //   tabBarOptions: {
+  //     style: {
+  //       backgroundColor: colors.greyLight,
+  //     },
+  //     showLabel: false,
+  //     activeTintColor: colors.blue,
+  //     inactiveTintColor: colors.greyDark,
+  //   },
+  // },
 );

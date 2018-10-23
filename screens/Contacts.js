@@ -23,14 +23,14 @@ export default class Contacts extends React.Component {
     error: false,
   };
 
-  static navigationOptions = ({ navigation: { navigate }}) => ({
+  static navigationOptions = ({ navigation: { toggleDrawer }}) => ({
     title: "Contacts",
     headerLeft: (
       <Icon
         name="menu"
         size={24}
         style={{ color: colors.black, marginLeft: 10 }}
-        onPress={() => navigate("DrawerToggle")}
+        onPress={() => toggleDrawer()}
       />
     ),
   });
