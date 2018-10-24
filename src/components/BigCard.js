@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { View, Text, Image } from "react-native";
 import DataRow from "./DataRow";
 
-type Props = {};
-export default class BigCard extends Component<Props> {
+export default class BigCard extends Component {
   render() {
     const { image, title, data } = this.props;
 
