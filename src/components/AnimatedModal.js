@@ -4,8 +4,7 @@ import { View, Text, Dimensions, TouchableOpacity } from "react-native";
 import Header from "./Header";
 const { height, width } = Dimensions.get("window");
 
-type Props = {};
-export default class AnimatedModal extends Component<Props> {
+export default class AnimatedModal extends Component {
   render() {
     const { title, image, children, onClose } = this.props;
     let bottomStyle = this.props.visible ? { bottom: 0 } : { bottom: -height };
@@ -13,7 +12,7 @@ export default class AnimatedModal extends Component<Props> {
     return (
       <View style={[styles.container, bottomStyle]}>
         <Header title={title}>
-          <TouchableOpacity onPress={onClose}>
+          <TouchableOpacity onPress={onClose} style={styles.button}>
             <Text style={styles.closeText}>Close</Text>
           </TouchableOpacity>
         </Header>
@@ -39,5 +38,10 @@ const styles = {
   closeText: {
     fontSize: 17,
     color: "#fff"
+  },
+  button: {
+    backgroundColor: '#DDDDDD',
+    alignItems: 'center',
+    padding: 10
   }
 };

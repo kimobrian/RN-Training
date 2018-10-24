@@ -13,8 +13,7 @@ function getRandomInt(max, min) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   state = {
     isModalVisible: false
   };

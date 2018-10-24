@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 
-type Props = {};
-export default class AnimatedBar extends Component<Props> {
+export default class AnimatedBar extends Component {
   render() {
     let widthStyle = { width: this.props.value };
     return <View style={[styles.bar, widthStyle]} />;
