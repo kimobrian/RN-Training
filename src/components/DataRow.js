@@ -33,15 +33,9 @@ const styles = {
     fontWeight: "bold",
     color: "#6e6e6e"
   },
-  statusValue: {
-    flex: 2
-  },
-  statusValueText: {
-    color: "#404040"
-  },
-  statusBar: {
-    flex: 5
-  }
+  statusValue: { flex: 2 },
+  statusValueText: { color: "#404040" },
+  statusBar: { flex: 5 }
 };
 
 export default DataRow;

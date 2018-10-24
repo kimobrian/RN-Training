@@ -37,9 +37,7 @@ export default class BigCard extends Component<Props> {
 }
 
 const styles = {
-  container: {
-    flex: 1
-  },
+  container: { flex: 1 },
   title: {
     fontSize: 25,
     fontWeight: "bold"

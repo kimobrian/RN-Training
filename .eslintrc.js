@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "commonjs": true
     },
     "extends": "eslint:recommended",
     "parser": "babel-eslint",
@@ -40,7 +41,8 @@ module.exports = {
             "arraysInObjects": false 
         }],
         "object-curly-newline": ["error", { "multiline": true }],
-        "comma-dangle": ["error", "never"]
+        "comma-dangle": ["error", "never"],
+        "prefer-const": "error"
     },
     "settings": {
         "react": {

@@ -9,12 +9,12 @@ const Card = ({
   bookmarkAction,
   shareAction
 }) => {
-  let scaleValue = new Animated.Value(0);
+  const scaleValue = new Animated.Value(0);
   const cardScale = scaleValue.interpolate({
     inputRange: [0, 0.5, 1],
     outputRange: [1, 1.1, 1.2]
   });
-  let transformStyle = { ...styles.card, transform: [{ scale: cardScale }] };
+  const transformStyle = { ...styles.card, transform: [{ scale: cardScale }]};
   return (
     <TouchableWithoutFeedback
       onPressIn={() => {
@@ -36,7 +36,7 @@ const Card = ({
         }).start();
       }}
     >
-    <Animated.View style={transformStyle}>
+      <Animated.View style={transformStyle}>
         <Image source={item.pic} style={styles.thumbnail} />
         <Text style={styles.name}>{item.name}</Text>
         <View style={styles.icons}>

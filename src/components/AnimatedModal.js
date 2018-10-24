@@ -7,7 +7,7 @@ const { height, width } = Dimensions.get("window");
 export default class AnimatedModal extends Component {
   render() {
     const { title, image, children, onClose } = this.props;
-    let bottomStyle = this.props.visible ? { bottom: 0 } : { bottom: -height };
+    const bottomStyle = this.props.visible ? { bottom: 0 } : { bottom: -height };
 
     return (
       <View style={[styles.container, bottomStyle]}>
@@ -40,8 +40,8 @@ const styles = {
     color: "#fff"
   },
   button: {
-    backgroundColor: '#DDDDDD',
-    alignItems: 'center',
+    backgroundColor: "#DDDDDD",
+    alignItems: "center",
     padding: 10
   }
 };

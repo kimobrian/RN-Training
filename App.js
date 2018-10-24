@@ -14,9 +14,7 @@ function getRandomInt(max, min) {
 }
 
 export default class App extends Component {
-  state = {
-    isModalVisible: false
-  };
+  state = { isModalVisible: false };
 
   constructor(props) {
     super(props);
@@ -47,9 +45,7 @@ export default class App extends Component {
   shareAction = () => {};
 
   closeModal = () => {
-    this.setState({
-      isModalVisible: false
-    });
+    this.setState({ isModalVisible: false });
   };
 
   render() {
@@ -67,9 +63,7 @@ export default class App extends Component {
           title={"View Pokemon"}
           visible={this.state.isModalVisible}
           onClose={() => {
-            this.setState({
-              isModalVisible: false
-            });
+            this.setState({ isModalVisible: false });
           }}
         >
           <BigCard
