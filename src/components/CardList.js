@@ -1,16 +1,24 @@
 import React from "react";
-import { ScrollView, View, FlatList } from "react-native";
+import { Animated, View, FlatList, Platform } from "react-native";
 import Card from "./Card";
+import { HEADER_MAX_HEIGHT } from "../settings/layout";
 
 const CardList = ({
   data,
   cardAction,
   viewAction,
   bookmarkAction,
-  shareAction
+  shareAction,
+  onScroll
 }) => {
   return (
-    <ScrollView>
+    <Animated.ScrollView
+      style={styles.scroll}
+      scrollEventThrottle={1}
+      onScroll={onScroll}
+      contentInset={{ top: HEADER_MAX_HEIGHT }}
+      contentOffset={{ y: -HEADER_MAX_HEIGHT }}
+    >
       <View style={{ alignItems: "center" }}>
         <FlatList
           data={data}
@@ -27,8 +35,16 @@ const CardList = ({
           numColumns={2}
         />
       </View>
-    </ScrollView>
+    </Animated.ScrollView>
   );
 };
 
 export default CardList;
+
+const styles = {
+  scroll: { flex: 1 },
+  scroll_container: {
+    alignItems: "center",
+    paddingTop: Platform.OS == "android" ? HEADER_MAX_HEIGHT : 0
+  }
+};

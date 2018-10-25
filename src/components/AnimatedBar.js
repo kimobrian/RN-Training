@@ -25,9 +25,7 @@ export default class AnimatedBar extends Component {
   };
 
   render() {
-    let barWidth = {
-      width: this.width
-    };
+    const barWidth = { width: this.width };
     return <Animated.View style={[styles.bar, barWidth]} />;
   }
 }

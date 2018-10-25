@@ -32,13 +32,13 @@ export default class AnimatedModal extends Component {
     const { title, image, children, onClose } = this.props;
     const bottomStyle = this.props.visible ? { bottom: 0 } : { bottom: -height };
 
-    let negativeHeight = -height + 20;
-    let modalMoveY = this.yTranslate.interpolate({
+    const negativeHeight = -height + 20;
+    const modalMoveY = this.yTranslate.interpolate({
       inputRange: [0, 1],
       outputRange: [0, negativeHeight]
     });
 
-    let translateStyle = { transform: [{ translateY: modalMoveY }] }; // translateY is the transform for moving objects vertically
+    const translateStyle = { transform: [{ translateY: modalMoveY }]}; // translateY is the transform for moving objects vertically
 
     return (
       <Animated.View style={[styles.container, translateStyle]}>
