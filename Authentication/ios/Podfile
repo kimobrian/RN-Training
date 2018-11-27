@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Authentication' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Authentication
+
+  pod 'GoogleSignIn'
+
+  target 'AuthenticationTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Authentication-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Authentication-tvOS
+
+  target 'Authentication-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
