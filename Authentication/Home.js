@@ -3,6 +3,7 @@ import { Text, TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import { GoogleSignin } from "react-native-google-signin";
 import { Card } from "react-native-elements";
+import Camera from "./Camera";
 
 const StyledView = styled.View`
   flex: 1;
@@ -75,6 +76,14 @@ export default class HomeScreen extends Component {
   render() {
     const { navigation } = this.props;
     const userInfo = navigation.getParam("userInfo");
-    return <StyledView>{this.renderUserInfo(userInfo)}</StyledView>;
+    return (
+      <StyledView>
+        {this.renderUserInfo(userInfo)}
+        <Card>
+          {/* <Camera /> */}
+          <Text>Camera Section</Text>
+        </Card>
+      </StyledView>
+    );
   }
 }

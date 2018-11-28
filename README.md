@@ -58,8 +58,8 @@ end
   When completed, your config should look something similar to the following (but with your application-specific values):
     ```js
     const values = {
-      webClientId: '365817353968-mg57505av4jqrqlkg8qrkpo1f9n697ep.apps.googleusercontent.com',
-      iosClientId: '365817353968-ssam6rmh4228kefkcl0iva707k5mb0u1.apps.googleusercontent.com'
+      webClientId: 'webClientId',
+      iosClientId: 'iosClientId'
     }
 
     export default values;
@@ -73,3 +73,8 @@ end
       offlineAccess: false,
     });
     ```
+
+`react-native-camera`
+- Install
+- Link
+- https://github.com/react-native-community/react-native-camera/issues/786#issuecomment-370882978
