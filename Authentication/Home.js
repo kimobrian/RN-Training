@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import { Text, TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import { GoogleSignin } from "react-native-google-signin";
+import { Card } from "react-native-elements";
 
 const StyledView = styled.View`
   flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 const StyledViewB = styled.View`
   justify-content: center;
   align-items: center;
-  background-color: #f5fcff;
 `;
 
 export default class HomeScreen extends Component {
@@ -60,13 +60,15 @@ export default class HomeScreen extends Component {
 
   renderUserInfo(userInfo) {
     return (
-      <StyledViewB>
-        <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 20 }}>
-          Welcome {userInfo.user.name}
-        </Text>
-        <Text>Your user info: {JSON.stringify(userInfo.user, null, 2)}</Text>
-        {this.renderError()}
-      </StyledViewB>
+      <Card>
+        <StyledViewB>
+          <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 20 }}>
+            Welcome {userInfo.user.name}
+          </Text>
+          <Text>Your user info: {JSON.stringify(userInfo.user, null, 2)}</Text>
+          {this.renderError()}
+        </StyledViewB>
+      </Card>
     );
   }
 
