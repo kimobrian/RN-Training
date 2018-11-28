@@ -9,6 +9,8 @@ target 'Authentication' do
 
   pod 'GoogleSignIn'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'AuthenticationTests' do
     inherit! :search_paths
     # Pods for testing
