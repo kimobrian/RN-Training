@@ -5,7 +5,6 @@ import Home from "./Home";
 import Icon from "react-native-vector-icons/FontAwesome";
 import styled from "styled-components/native";
 
-
 const StyledButton = styled.TouchableOpacity`
   align-items: center;
   padding: 10px;
@@ -21,8 +20,8 @@ export default createStackNavigator(
     },
     Home: {
       screen: Home,
-      navigationOptions: ({ navigation: { getParam }}) => ({
-        title: `Welcome ${getParam('userInfo').user.givenName}`,
+      navigationOptions: ({ navigation: { getParam } }) => ({
+        title: `Welcome ${getParam("userInfo").user.givenName}`,
         headerLeft: null,
         headerRight: (
           <StyledButton onPress={this._signOut}>
