@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h

@@ -1,0 +1,36 @@
+dependencies: \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.m \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputDelegate.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputViewProtocol.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAccessibilityManager.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryView.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryViewContent.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/RCTTextTransform.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/Text/TextInput/RCTTextSelection.h

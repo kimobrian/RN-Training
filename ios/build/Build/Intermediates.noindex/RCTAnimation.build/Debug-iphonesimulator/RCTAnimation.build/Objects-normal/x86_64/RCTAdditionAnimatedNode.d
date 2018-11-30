@@ -1,0 +1,5 @@
+dependencies: \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAdditionAnimatedNode.m \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAdditionAnimatedNode.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h

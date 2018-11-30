@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTBatchedBridge.m \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/Target\ Support\ Files/React/React-prefix.pch \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTAssert.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTDefines.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTBridge.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTBridgeDelegate.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTBridgeModule.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTFrameUpdate.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTInvalidating.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTJavaScriptExecutor.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTConvert.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Layout/Layout.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Views/RCTAnimationType.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Views/RCTTextDecorationLineType.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTLog.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Views/RCTPointerEvents.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Executors/RCTContextExecutor.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTJavaScriptLoader.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTModuleData.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTModuleMap.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTModuleMethod.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTPerformanceLogger.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTPerfStats.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTFPSGraph.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTProfile.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Modules/RCTRedBox.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Modules/RCTSourceCode.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTSparseArray.h \
+  /Users/kimo/Desktop/NodeJS/React/ReactNative/RN-Training/Authentication/ios/Pods/React/React/Base/RCTUtils.h

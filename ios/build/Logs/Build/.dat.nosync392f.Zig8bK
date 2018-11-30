@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>5713830E-34AF-45B8-A2EE-F205F1E55BF8</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5713830E-34AF-45B8-A2EE-F205F1E55BF8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Authentication project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Authentication</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace Authentication with scheme Authentication and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>565105259.65169799</real>
+			<key>timeStoppedRecording</key>
+			<real>565105262.70528305</real>
+			<key>title</key>
+			<string>Building workspace Authentication with scheme Authentication and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>5713830E-34AF-45B8-A2EE-F205F1E55BF8</string>
+		</dict>
+		<key>F7729C4B-E8A6-406A-8601-3A4FACA9DA85</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F7729C4B-E8A6-406A-8601-3A4FACA9DA85.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Authentication project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Authentication</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace Authentication with scheme Authentication and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>565105232.39138198</real>
+			<key>timeStoppedRecording</key>
+			<real>565105235.44275796</real>
+			<key>title</key>
+			<string>Building workspace Authentication with scheme Authentication and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>F7729C4B-E8A6-406A-8601-3A4FACA9DA85</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
